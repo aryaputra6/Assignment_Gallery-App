@@ -44,6 +44,7 @@ const EditPhoto = () => {
     setLoading(true);
     getdata()
       setLoading(false)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   if (error) return <div>Error!</div>;
