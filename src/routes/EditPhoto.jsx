@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
@@ -44,7 +45,6 @@ const EditPhoto = () => {
     setLoading(true);
     getdata()
       setLoading(false)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   if (error) return <div>Error!</div>;
